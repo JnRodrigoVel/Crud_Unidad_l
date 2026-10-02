@@ -18,11 +18,10 @@ public class VehiculoRepository extends AbstractJpaRepository<Vehiculo, String> 
 
     @Override
     protected String generateId() {
-        // La placa la escribe el usuario, no se autogenera.
+
         throw new UnsupportedOperationException("La placa la define el usuario");
     }
 
-    // Datos de ejemplo: se cargan una sola vez (aunque luego borres todo).
     public void seedData() {
         if (!sembrado && findAll().isEmpty()) {
             sembrado = true;

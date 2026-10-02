@@ -18,7 +18,7 @@ public class Toast {
         Label label = new Label(message);
         label.setStyle("-fx-background-color: #00FF99; -fx-text-fill: black; "
                 + "-fx-padding: 10px; -fx-border-radius: 5px; -fx-background-radius: 5px;");
-        label.setOpacity(0);  // Inicialmente invisible
+        label.setOpacity(0);
 
 
         Popup popup = new Popup();

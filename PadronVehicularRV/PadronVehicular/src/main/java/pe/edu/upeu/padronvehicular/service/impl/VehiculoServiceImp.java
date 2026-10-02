@@ -23,7 +23,7 @@ public class VehiculoServiceImp extends CrudGenericoServiceImp<Vehiculo, String>
         return vehiculoRepository;
     }
 
-    // Regla de negocio: la placa debe ser única.
+    // la placa debe ser unica
     @Override
     public Vehiculo save(Vehiculo vehiculo) {
         if (vehiculoRepository.existsById(vehiculo.getPlaca())) {
